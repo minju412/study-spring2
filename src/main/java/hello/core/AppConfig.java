@@ -1,7 +1,7 @@
 package hello.core;
 
 import hello.core.discount.DiscountPolicy;
-import hello.core.discount.FixDiscountPolicy;
+import hello.core.discount.RateDiscountPolicy;
 import hello.core.member.MemberRepository;
 import hello.core.member.MemberService;
 import hello.core.member.MemberServiceImpl;
@@ -28,7 +28,8 @@ public class AppConfig {
 
     // 역할: 할인 정책
     private DiscountPolicy discountPolicy() {
-        return new FixDiscountPolicy(); // 구현: 고정 할인 정책
+//        return new FixDiscountPolicy(); // 구현: 고정 할인 정책
+        return new RateDiscountPolicy(); // 구현: 정률 할인 정책
     }
 
 }
