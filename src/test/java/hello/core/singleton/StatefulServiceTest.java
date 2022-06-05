@@ -21,7 +21,7 @@ class StatefulServiceTest {
 //         */
 //        statefulService1.order("userA", 10000);
 //        /*
-//         ThreadB: 사용자 B가 20000원 주문 -> A가 주문하고 조히하는 사이에 B가 끼어든 상황!
+//         ThreadB: 사용자 B가 20000원 주문 -> A가 주문하고 조회하는 사이에 B가 끼어든 상황!
 //         */
 //        statefulService2.order("userB", 20000);
 //        /*
