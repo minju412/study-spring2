@@ -9,7 +9,21 @@ import org.springframework.stereotype.Component;
 @Component
 public class OrderServiceImpl implements OrderService {
 
-    private final MemberRepository memberRepository;
+//    private MemberRepository memberRepository;
+//    private DiscountPolicy discountPolicy;
+//
+//    @Autowired
+//    public void setMemberRepository(MemberRepository memberRepository){
+//        this.memberRepository = memberRepository;
+//    }
+//
+//    @Autowired
+//    public void setDiscountPolicy(DiscountPolicy discountPolicy){
+//        this.discountPolicy = discountPolicy;
+//    }
+
+
+    private final MemberRepository memberRepository; // 생성자 주입을 사용하면 final 키워드를 넣을 수 있다는 장점이 있다.
     private final DiscountPolicy discountPolicy;
 
     @Autowired

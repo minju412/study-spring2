@@ -26,6 +26,7 @@ public class AppConfig {
     public OrderService orderService(){
         System.out.println("call AppConfig.orderService");
         return new OrderServiceImpl(memberRepository(), discountPolicy());
+//        return null;
     }
 
     // 역할: 멤버 리포지토리
